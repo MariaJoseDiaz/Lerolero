@@ -80,7 +80,7 @@ function draw() {
   background(237, 34, 93);
   fill(0);
 
-    if (mouseButton == LEFT  === true){
+    if (mouseButton == LEFT === true){
        drawEllipse(45, 45, 45, 168, 143);
        
    } else { (mouseButton == RIGHT === false)
@@ -93,7 +93,6 @@ function draw() {
    
      fill(255)
 }
-
-
+  }
 
 
