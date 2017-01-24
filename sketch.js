@@ -80,10 +80,10 @@ function draw() {
   background(237, 34, 93);
   fill(0);
 
-    if (touchStarted === true){
+    if (mouseButton == LEFT  === true){
        drawEllipse(45, 45, 45, 168, 143);
        
-   } else { (touchStarted === false)
+   } else { (mouseButton == RIGHT === false)
       //   drawEllipse(130, 30, 147, 168, 45);
    
  //  if (false === (237, 34, 93) ){
