@@ -1,30 +1,15 @@
- 
-   function drawEllipse(myWidht, myheight, r, g, b) {
-    fill(r, g, b);
-    noStroke()
-    ellipse(random(0, width), random(0, height), myWidht, myheight);
-    frameRate(7)
-  }
-  
-  function setup() {
-  createCanvas(400, 400)
+var cnv;
+var d;
+var g;
+function setup() {
+  cnv = createCanvas(100, 100);
+  cnv.touchStarted("#e25a93"); // attach listener for
+                                // canvas click only
+  d = 10;
+  g = 100;
 }
 
 function draw() {
-  background(237, 34, 93);
-  fill(0);
-
-    if (mouseButton == LEFT === true){
-       drawEllipse(45, 45, 45, 168, 143);
-       
-  // } else { (mouseButton == RIGHT === false)
-      //   drawEllipse(130, 30, 147, 168, 45);
-   
- //  if (false === (237, 34, 93) ){
-   //   drawEllipse(130, 30, 147, 168, 45);
-  // }
-   
-   
- //    fill(255)
+  background(g);
+  ellipse(width/2, height/2, d, d);
 }
-  }
